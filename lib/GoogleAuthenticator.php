@@ -25,16 +25,13 @@ class GoogleAuthenticator {
     }
 
     public function checkCode($secret,$code) {
-        $time = floor(time() / 30);
-        for ( $i = -1; $i <= 1; $i++) {
-
+        $time = (int)((((int)$time * 1000) / (30 * 1000)));
+        for ($i = -1; $i <= 1; $i++) {
             if ($this->getCode($secret,$time + $i) == $code) {
                 return true;
             }
         }
-
         return false;
-
     }
 
     public function getCode($secret,$time = null) {
