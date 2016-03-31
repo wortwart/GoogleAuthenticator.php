@@ -1,5 +1,7 @@
 Ported from http://code.google.com/p/google-authenticator/
 
+Fixes an error with the timestamp format.
+
 You can use the Google Authenticator app from here
 http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=1066447
 to generate One Time Passwords/Tokens and check them with this little
