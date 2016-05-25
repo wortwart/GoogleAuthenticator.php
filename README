@@ -1,4 +1,10 @@
 Ported from http://code.google.com/p/google-authenticator/
 
-Forked from chregu.
-Fixes an error with the timestamp format.
+- Fixes an error in the library with the timestamp format.
+- Removes original demo app.
+- Adds own demo app (auth-demo.php, style.css, dump.sql).
+- Adds totp.php to help understand the TOTP algorithm.
+
+##Issues:
+
+The demo app's user interface is in German. If there's interest I might translate it.
